@@ -1,0 +1,26 @@
+---
+
+K: 1
+T: 128
+R: 4
+tol: 0.001
+mmmse_tol: 0.1
+epsilon: 0.0000001
+sigma: 1.0
+snr: 10
+I: 16
+d: 4
+
+device: "cuda:0"
+lr: 0.003
+lr_type: "fixed"
+omega: 0.9
+max_ite: 100
+model_name: "WMMSE"
+channel_type: "circular"
+
+
+save_dir: './results/'
+save_result: False
+test_numb: 100
+model_ites: 30
