@@ -12,8 +12,8 @@ The WSR maximization problem over the set of precoders $\mathbf{V} \triangleq \{
 
 $$
     \begin{aligned}
-        \max_{\mathbf{V}} \quad & \sum_{k=1}^{K} \alpha_{k} R_{k}, \label{prob:ori_prob_obj} \\
-        \text{s.t.} \quad & \sum_{k=1}^{K} \operatorname{Tr}\left(\mathbf{V}_{k} \mathbf{V}_{k}^{H}\right) \leq P_{\max}, \label{prob:ori_prob_constr}
+        &\underset{x\in\mathbb{R}^n}{\text{min}} && \frac{1}{2} x^{\top} Q x + p^{\top} x \\
+        & \text{s.t.} && l \leq A x \leq u,
     \end{aligned}
 $$
 
