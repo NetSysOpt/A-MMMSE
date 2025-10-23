@@ -12,7 +12,7 @@ The WSR maximization problem over the set of precoders $\mathbf{V} \triangleq \{
 
 $$
     \begin{aligned}
-        &\max_{\mathbf{V}} && \sum_{k=1}^{K} \alpha_{k} R_{k}, \\
+        &\underset{\mathbf{V}}{\text{max}} && \sum_{k=1}^{K} \alpha_{k} R_{k}, \\
         &\text{s.t.} && \sum_{k=1}^{K} \operatorname{Tr}\left(\mathbf{V}_{k} \mathbf{V}_{k}^{H}\right) \leq P_{\max},
     \end{aligned}
 $$
