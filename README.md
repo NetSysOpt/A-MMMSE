@@ -8,7 +8,7 @@ $$
 $$
 
 where $\mathbf{H}_k \in \mathbb{C}^{N \times M}$ is the channel matrix from the BS to user $k$, and $\mathbf{n}_k \in \mathbb{C}^{N \times 1}$ is the additive white Gaussian noise vector following $\mathcal{CN}(\mathbf{0}, \sigma_k^2 \mathbf{I})$.
-The WSR maximization problem over the set of precoders $\mathbf{V} \triangleq \{\mathbf{V}_k\}_{k=1}^K$ is formulated as:
+The WSR maximization problem over the set of precoders $\mathbf{V} \triangleq {\mathbf{V}_k}_{k=1}^K$ is formulated as:
 
 
 $$
@@ -21,5 +21,5 @@ $$
 where $\alpha_k$ is the priority weight of user $k$, $P_{\text{max}}$ denotes the total transmit power budget at the BS, and $R_k$ represents the achievable rate for user $k$, defined as:
 
 $$
-R_{k} \triangleq \log \operatorname{det} \left(\mathbf{I} + \mathbf{H}_{k} \mathbf{V}_{k} \mathbf{V}_{k}^{H} \mathbf{H}_{k}^{H} \left( \sum_{j \neq k} \mathbf{H}_{k} \mathbf{V}_{j} \mathbf{V}_{j}^{H} \mathbf{H}_{k}^{H} + \sigma_k^{2} \mathbf{I} \right)^{-1} \right).
+R_{k} \triangleq \log \text{det} \left(\mathbf{I} + \mathbf{H}_{k} \mathbf{V}_{k} \mathbf{V}_{k}^{H} \mathbf{H}_{k}^{H} \left( \sum_{j \neq k} \mathbf{H}_{k} \mathbf{V}_{j} \mathbf{V}_{j}^{H} \mathbf{H}_{k}^{H} + \sigma_k^{2} \mathbf{I} \right)^{-1} \right).
 $$
