@@ -21,3 +21,6 @@ where $\alpha_k$ is the priority weight of user $k$, $P_{\text{max}}$ denotes th
 $$
 R_{k} \triangleq \log \text{det} \left(\mathbf{I} + \mathbf{H}_{k} \mathbf{V}_{k} \mathbf{V}_{k}^{H} \mathbf{H}_{k}^{H} \left( \sum_{j \neq k} \mathbf{H}_{k} \mathbf{V}_{j} \mathbf{V}_{j}^{H} \mathbf{H}_{k}^{H} + \sigma_k^{2} \mathbf{I} \right)^{-1} \right).
 $$
+
+Our work introduces an enhanced version of the classical WSR maximization algorithm WMMSE, developed within a block coordinate descent framework. The proposed method employs a highly parallel structure where the computationally intensive precoding matrix is updated via block coordinate gradient descent. This approach eliminates matrix inversion operations, relying exclusively on matrix multiplications that are exceptionally amenable to GPU acceleration. Additionally, a two-stage warm-start strategy based on sum mean-square error minimization is incorporated to accelerate convergence. The resulting algorithm is termed Accelerated Mixed weighted-unweighted sum-MSE Minimization (A-MMMSE).
+
