@@ -24,3 +24,19 @@ $$
 
 Our work introduces an enhanced version of the classical WSR maximization algorithm WMMSE, developed within a block coordinate descent framework. The proposed method employs a highly parallel structure where the computationally intensive precoding matrix is updated via block coordinate gradient descent. This approach eliminates matrix inversion operations, relying exclusively on matrix multiplications that are exceptionally amenable to GPU acceleration. Additionally, a two-stage warm-start strategy based on sum mean-square error minimization is incorporated to accelerate convergence. The resulting algorithm is termed Accelerated Mixed weighted-unweighted sum-MSE Minimization (A-MMMSE).
 
+## Software dependencies
+
+```markdown
+python=3.10
+pytorch=1.13.1 
+```
+
+## Running experiments
+To evaluate A-MMMSE performance under a configuration with 256 transmit antennas, 20 users, 4 data streams, and SNR=10 dB, execute the following command:
+```markdown
+python main.py --config ./configs/MIMO.yaml --model_name A_MMMSE --T 256 --I 20 --d 4 --snr 10 --omega 0.8 --lr 0.05
+```
+For GPU-accelerated performance evaluation, run:
+```markdown
+python main_gpu.py --config ./configs/MIMO.yaml --model_name A_MMMSE_GPU --T 1024 --I 20 --d 4 --snr 10 --omega 0.4 --lr 0.1
+```
