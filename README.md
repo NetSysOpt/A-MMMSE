@@ -7,9 +7,9 @@ $$
 \mathbf{y}_{k} = \mathbf{H}_{k} \mathbf{V}_{k} \mathbf{s}_{k} + \sum_{\substack{j=1 \\ j \neq k}}^{K} \mathbf{H}_{k} \mathbf{V}_{j} \mathbf{s}_{j} + \mathbf{n}_{k},
 $$
 
-where the optimization variable $\mathbf{H}_k \in \mathbb{C}^{N \times M}$
-
 where $\mathbf{H}_k \in \mathbb{C}^{N \times M}$ is the channel matrix from the BS to user $k$, and $\mathbf{n}_k \in \mathbb{C}^{N \times 1}$ is the additive white Gaussian noise vector following $\mathcal{CN}(\mathbf{0}, \sigma_k^2 \mathbf{I})$.
+
+
 The WSR maximization problem over the set of precoders $\mathbf{V} \triangleq {\mathbf{V}_{k}}_{k=1}^K$ is formulated as:
 
 
