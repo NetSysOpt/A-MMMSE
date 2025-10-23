@@ -10,6 +10,13 @@ $$
 where $\mathbf{H}_k \in \mathbb{C}^{N \times M}$ is the channel matrix from the BS to user $k$, and $\mathbf{n}_k \in \mathbb{C}^{N \times 1}$ is the additive white Gaussian noise vector following $\mathcal{CN}(\mathbf{0}, \sigma_k^2 \mathbf{I})$.
 The WSR maximization problem over the set of precoders $\mathbf{V} \triangleq \{\mathbf{V}_k\}_{k=1}^K$ is formulated as:
 
+
+$$
+    \begin{aligned}
+        &\underset{\mathbf{V}}{\text{max}} && \sum_{k=1}^{K} \alpha_{k} R_{k} \\
+        & \text{s.t.} && l \leq A x \leq u,
+    \end{aligned}
+$$
 $$
     \begin{aligned}
         &\underset{\mathbf{V}}{\text{max}} && \sum_{k=1}^{K} \alpha_{k} R_{k}, \\
