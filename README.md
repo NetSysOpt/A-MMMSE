@@ -11,10 +11,10 @@ where $\mathbf{H}_k \in \mathbb{C}^{N \times M}$ is the channel matrix from the 
 The WSR maximization problem over the set of precoders $\mathbf{V} \triangleq \{\mathbf{V}_k\}_{k=1}^K$ is formulated as:
 
 $$
-\begin{align}
+\begin{aligned}
     \max_{\mathbf{V}} \quad & \sum_{k=1}^{K} \alpha_{k} R_{k}, \label{prob:ori_prob_obj} \\
     \text{s.t.} \quad & \sum_{k=1}^{K} \operatorname{Tr}\left(\mathbf{V}_{k} \mathbf{V}_{k}^{H}\right) \leq P_{\max}, \label{prob:ori_prob_constr}
-\end{align}
+\end{aligned}
 $$
 
 where $\alpha_k$ is the priority weight of user $k$, $P_{\text{max}}$ denotes the total transmit power budget at the BS, and $R_k$ represents the achievable rate for user $k$, defined as:
