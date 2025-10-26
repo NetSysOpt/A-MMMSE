@@ -40,3 +40,13 @@ For GPU-accelerated performance evaluation, run:
 ```markdown
 python main_gpu.py --config ./configs/MIMO.yaml --model_name A_MMMSE_GPU --T 1024 --I 20 --d 4 --snr 10 --omega 0.4 --lr 0.1
 ```
+
+## Citing our work
+```text
+@article{gao2025accelerated,
+  title={An Accelerated Mixed Weighted-Unweighted MMSE Approach for MU-MIMO Beamforming},
+  author={Gao, Xi and Wang, Akang and Zhang, Junkai and Duan, Qihong and Xue, Jiang},
+  journal={arXiv preprint arXiv:2510.20507},
+  year={2025}
+}
+```
